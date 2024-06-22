@@ -17,8 +17,8 @@ public class readManger {
 
 	private static final int MEMBER_MAX = 12;
 	private static final String SPLITSTR = "#";
-//	private static final String ENCODING = "UTF-8";
-	private static final String ENCODING = "Unicode";
+	private static final String ENCODING = "UTF-8";
+//	private static final String ENCODING = "Unicode";
 	private static BufferedReader buffRead;
 	private static String ERR01 = "文件不存在";
 	private static String ERR02 = "读取文件失败";
