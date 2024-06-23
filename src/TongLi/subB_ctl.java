@@ -139,7 +139,7 @@ public class subB_ctl extends JFrame {
 	private static final int MAXPLAYER = 5;
 	private static final int MAXFOUL = 6;
 	private static final int MEMBER_MAX = 12;
-	private static final String FILEPATH = "C:\\TONGLI\\b.txt";
+	private static final String FILEPATH = "b.txt";
 	private static final String FONT_STYLE = "Microsoft YaHei";
 	team TeamB = new team();
 	team TeamB_Show = new team();

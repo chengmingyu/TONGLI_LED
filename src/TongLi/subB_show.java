@@ -36,7 +36,8 @@ public class subB_show extends JFrame {
 					String [] strTmp3= new String[MEMBER_MAX];
 					String [] strTmp4 = new String[MEMBER_MAX];
 					t.init();
-					readManger.LoadTeam("C:\\TONGLI\\a.txt", t);
+//					readManger.LoadTeam("C:\\TONGLI\\a.txt", t);
+					readManger.LoadTeam("b.txt", t);
 					subPingMu tmp_Ping = new subPingMu();
 					tmp_Ping.init();
 					for (int p = 0; p < MEMBER_MAX; p++){
