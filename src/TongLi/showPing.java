@@ -126,7 +126,7 @@ public class showPing extends JFrame {
 		if ( i == 1){
 			GuestPasueShow.setForeground(Color.RED);
 		}else {
-			GuestPasueShow.setForeground(Color.WHITE);
+			GuestPasueShow.setForeground(Color.RED);
 		}
 	}
 	// 主队暂停设置成黄色
@@ -134,7 +134,7 @@ public class showPing extends JFrame {
 		if ( i == 1){
 			HostPasueShow.setForeground(Color.RED);
 		}else{
-			HostPasueShow.setForeground(Color.WHITE);
+			HostPasueShow.setForeground(Color.RED);
 		}
 	}
 	
@@ -143,7 +143,7 @@ public class showPing extends JFrame {
 		if ( i == 1){
 			HostFoulShow.setForeground(Color.RED);
 		}else{
-			HostFoulShow.setForeground(Color.WHITE);
+			HostFoulShow.setForeground(Color.RED);
 		}
 	}
 	
@@ -152,7 +152,7 @@ public class showPing extends JFrame {
 		if ( i == 1){
 			GuestFoulShow.setForeground(Color.RED);
 		}else{
-			GuestFoulShow.setForeground(Color.WHITE);
+			GuestFoulShow.setForeground(Color.RED);
 		}
 	}
 	
@@ -225,7 +225,7 @@ public class showPing extends JFrame {
 
 		// // 中间冒号显示标签
 		// JLabel lblNewLabel = new JLabel(":");
-		// lblNewLabel.setForeground(Color.WHITE);
+		// lblNewLabel.setForeground(Color.RED);
 		// lblNewLabel.setFont(new Font("Microsoft YaHei", Font.BOLD, 30));
 		// lblNewLabel.setBounds(165, 10, 26, 24);
 		// contentPane.add(lblNewLabel);
@@ -301,7 +301,7 @@ public class showPing extends JFrame {
 		// 主队犯规数设置
 		HostFoulShow.setText(P.getStrHostFoul());
 		HostFoulShow.setHorizontalAlignment(SwingConstants.CENTER);
-		HostFoulShow.setForeground(Color.WHITE);
+		HostFoulShow.setForeground(Color.RED);
 		HostFoulShow.setFont(new Font("Microsoft YaHei", Font.PLAIN,
 				xiaWordsize));
 //		HostFoulShow.setBounds(55, 96, 38, 13);
@@ -311,7 +311,7 @@ public class showPing extends JFrame {
 		// 主队暂停数设置
 		HostPasueShow.setText(P.getStrHostPasue());
 		HostPasueShow.setHorizontalAlignment(SwingConstants.CENTER);
-		HostPasueShow.setForeground(Color.WHITE);
+		HostPasueShow.setForeground(Color.RED);
 		HostPasueShow.setFont(new Font("Microsoft YaHei", Font.PLAIN,
 				xiaWordsize));
 //		HostPasueShow.setBounds(132, 97, 38, 13);
@@ -321,7 +321,7 @@ public class showPing extends JFrame {
 		// 客队犯规数设置
 		GuestFoulShow.setText(P.getStrGuestFoul());
 		GuestFoulShow.setHorizontalAlignment(SwingConstants.CENTER);
-		GuestFoulShow.setForeground(Color.WHITE);
+		GuestFoulShow.setForeground(Color.RED);
 		GuestFoulShow.setFont(new Font("Microsoft YaHei", Font.PLAIN,
 				xiaWordsize));
 //		GuestFoulShow.setBounds(226, 96, 38, 13);
@@ -331,7 +331,7 @@ public class showPing extends JFrame {
 		// 客队暂停数设置
 		GuestPasueShow.setText(P.getStrGuestPasue());
 		GuestPasueShow.setHorizontalAlignment(SwingConstants.CENTER);
-		GuestPasueShow.setForeground(Color.WHITE);
+		GuestPasueShow.setForeground(Color.RED);
 		GuestPasueShow.setFont(new Font("Microsoft YaHei", Font.PLAIN,
 				xiaWordsize));
 //		GuestPasueShow.setBounds(292, 97, 38, 13);
