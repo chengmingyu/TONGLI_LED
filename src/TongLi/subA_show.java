@@ -36,7 +36,7 @@ public class subA_show extends JFrame {
 					String [] strTmp3= new String[MEMBER_MAX];
 					String [] strTmp4 = new String[MEMBER_MAX];
 					t.init();
-					readManger.LoadTeam("C:\\TONGLI\\a.txt", t);
+					readManger.LoadTeam("a.txt", t);
 					subPingMu tmp_Ping = new subPingMu();
 					tmp_Ping.init();
 					for (int p = 0; p < MEMBER_MAX; p++){
@@ -94,7 +94,7 @@ public class subA_show extends JFrame {
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		//屏幕显示位置
 //		setBounds(236, 75, 160, 245);
-		setBounds(310, 92, 200, 420);
+		setBounds(0, 60, 250, 324);
 		setAlwaysOnTop(true);
 		setUndecorated(true);
 		setVisible(true);
@@ -126,32 +126,40 @@ public class subA_show extends JFrame {
 //		int iHeight_Goal = 20;
 //		
 		
+		int x = 8;
+		
+		//共通起始Y坐标
+		int comm_x = 3;
+		
+		//字号
+		int fontSize = 16;
+		
 		int iXp_Num = 10;
-		int iYp_Num = 2;
-		int iWidth_Num = 35;
-		int iHeight_Num = 34;
+		int iYp_Num = comm_x;
+		int iWidth_Num = 35 - x;
+		int iHeight_Num = 34 - x;
 		
 		int iXp_Name = 45;
-		int iYp_Name = 2;
-		int iWidth_Name = 65;
-		int iHeight_Name = 34;
+		int iYp_Name = comm_x;
+		int iWidth_Name = 65 - x;
+		int iHeight_Name = 34 - x;
 		
-		int iXp_Foul = 105;
-		int iYp_Foul = 2;
+		int iXp_Foul = 135;
+		int iYp_Foul = comm_x;
 		int iWidth_Foul = 65;
-		int iHeight_Foul = 34;
+		int iHeight_Foul = 34 - x;
 		
-		int iXp_Goal = 170;
-		int iYp_Goal = 2;
+		int iXp_Goal = 220;
+		int iYp_Goal = comm_x;
 		int iWidth_Goal = 35;
-		int iHeight_Goal = 34;
+		int iHeight_Goal = 34 - x;
 		
 		for (int i = 0; i < MEMBER_MAX ; i++){
 			//System.out.println(subA_Ping.getStrPlayerNo()[i]);
 			//  队员号码
 			lb_Num[i] = new JLabel("");
 			lb_Num[i].setText(subA_Ping.getStrPlayerNo()[i]);
-			lb_Num[i].setFont(new Font(FONT_STYLE, Font.PLAIN, 19));
+			lb_Num[i].setFont(new Font(FONT_STYLE, Font.PLAIN, fontSize));
 			lb_Num[i].setForeground(Color.RED);
 			lb_Num[i].setBounds(iXp_Num,iYp_Num+iHeight_Num*i , iWidth_Num, iHeight_Num);
 			contentPane.add(lb_Num[i]);
@@ -159,7 +167,7 @@ public class subA_show extends JFrame {
 			//  队员姓名
 			lb_Name[i] = new JLabel("");
 			lb_Name[i].setText(subA_Ping.getStrPlayerName()[i]);
-			lb_Name[i].setFont(new Font(FONT_STYLE, Font.PLAIN,19));
+			lb_Name[i].setFont(new Font(FONT_STYLE, Font.PLAIN,fontSize));
 			lb_Name[i].setForeground(Color.RED);
 			lb_Name[i].setBounds(iXp_Name, iYp_Name+iHeight_Name*i, iWidth_Name, iHeight_Name);
 			contentPane.add(lb_Name[i]);
@@ -167,7 +175,7 @@ public class subA_show extends JFrame {
 			//  队员犯规次数
 			lb_Foul[i] = new JLabel("");
 			lb_Foul[i].setText(subA_Ping.getStrPlayerFoul()[i]);
-			lb_Foul[i].setFont(new Font("Courier New", Font.PLAIN,17));
+			lb_Foul[i].setFont(new Font("Courier New", Font.PLAIN,fontSize));
 			lb_Foul[i].setForeground(Color.RED);
 			lb_Foul[i].setBounds(iXp_Foul, iYp_Foul+iHeight_Foul*i, iWidth_Foul, iHeight_Foul);
 			contentPane.add(lb_Foul[i]);
@@ -175,7 +183,7 @@ public class subA_show extends JFrame {
 			//  队员得分
 			lb_Goal[i] = new JLabel("");
 			lb_Goal[i].setText(subA_Ping.getStrPlayerGoal()[i]);
-			lb_Goal[i].setFont(new Font(FONT_STYLE, Font.PLAIN, 19));
+			lb_Goal[i].setFont(new Font(FONT_STYLE, Font.PLAIN, fontSize));
 			lb_Goal[i].setForeground(Color.RED);
 			lb_Goal[i].setBounds(iXp_Goal, iYp_Goal+iHeight_Goal*i, iWidth_Goal, iHeight_Goal);
 			contentPane.add(lb_Goal[i]);
