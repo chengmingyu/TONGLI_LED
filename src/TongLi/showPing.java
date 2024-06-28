@@ -83,7 +83,7 @@ public class showPing extends JFrame {
 ////			HostPointShow.setBounds(10, 20, 130, 90);
 //			HostPointShow.setBounds(0, 80, 200, 100);
 //		}
-		HostPointShow.setBounds(0, 50, 350, 100);
+//		HostPointShow.setBounds(0, 50, 350, 100);
 	}
 
 	// 客队加分设置
@@ -97,7 +97,7 @@ public class showPing extends JFrame {
 ////			GuestPointShow.setBounds(195, 20, 130, 90);
 //			GuestPointShow.setBounds(230, 80, 200, 100);
 //		}
-		GuestPointShow.setBounds(350, 50, 350, 100);
+//		GuestPointShow.setBounds(350, 50, 350, 100);
 	}
 
 	// 主队犯规设置
@@ -201,7 +201,7 @@ public class showPing extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//屏幕显示位置
 		//setBounds(396, 75, 340, 245);
-		setBounds(250, 60, 700, 324);
+		setBounds(250, 124, 700, 260);
 		setAlwaysOnTop(true);
 		setUndecorated(true);
 		setVisible(true);
@@ -213,14 +213,16 @@ public class showPing extends JFrame {
 		contentPane.setLayout(null);
 
 		// 主队比分显示标签
+		int PointFontSize = 105;
+		
 		HostPointShow.setText(P.getStrHostPoint());
 		HostPointShow.setHorizontalAlignment(SwingConstants.CENTER);
 //		HostPointShow.setFont(new Font("Microsoft YaHei", Font.BOLD, 50));
-		HostPointShow.setFont(new Font("Microsoft YaHei", Font.BOLD, 90));
-		HostPointShow.setForeground(Color.GREEN);
+		HostPointShow.setFont(new Font("Microsoft YaHei", Font.BOLD, PointFontSize));
+		HostPointShow.setForeground(Color.YELLOW);
 //		HostPointShow.setBounds(65, -12, 98, 79);
 //		HostPointShow.setBounds(15, 30, 250, 150);
-		HostPointShow.setBounds(0, 50, 350, 100);
+		HostPointShow.setBounds(0, 0, 350, 130);
 		contentPane.add(HostPointShow);
 
 		// // 中间冒号显示标签
@@ -232,18 +234,18 @@ public class showPing extends JFrame {
 
 		// 客队比分显示标签
 		GuestPointShow.setText(P.getStrGuestPoint());
-		GuestPointShow.setForeground(Color.GREEN);
+		GuestPointShow.setForeground(Color.YELLOW);
 		GuestPointShow.setHorizontalAlignment(SwingConstants.CENTER);
 //		GuestPointShow.setFont(new Font("Microsoft YaHei", Font.BOLD, 50));
-		GuestPointShow.setFont(new Font("Microsoft YaHei", Font.BOLD, 90));
+		GuestPointShow.setFont(new Font("Microsoft YaHei", Font.BOLD, PointFontSize));
 //		GuestPointShow.setBounds(235, -12, 74, 79);
-		GuestPointShow.setBounds(350, 50, 350, 100);
+		GuestPointShow.setBounds(350, 0, 350, 130);
 		contentPane.add(GuestPointShow);
 
 		//犯规标签的X
-		int foulLableY = 220;
+		int foulLableY = 170;
 		
-		int pauseLableY = 270;
+		int pauseLableY = 210;
 		
 		//主队犯规
 		JLabel lblNewLabel_1 = new JLabel("犯规:");
@@ -285,17 +287,17 @@ public class showPing extends JFrame {
 		showHalf_label.setFont(new Font("Microsoft YaHei", Font.PLAIN, 35));
 		showHalf_label.setForeground(Color.RED);
 //		showHalf_label.setBounds(132, 16, 74, 24);
-		showHalf_label.setBounds(0, 20, 700, 50);
+		showHalf_label.setBounds(0, 40, 700, 50);
 		contentPane.add(showHalf_label);
 
 		// 倒计时 时钟显示标签
-		gameTimeShowLable.setForeground(Color.YELLOW);
+		gameTimeShowLable.setForeground(Color.GREEN);
 		gameTimeShowLable.setHorizontalAlignment(SwingConstants.CENTER);
 //		gameTimeShowLable.setFont(new Font("Microsoft YaHei", Font.BOLD, 25));
 //		gameTimeShowLable.setBounds(138, 52, 74, 24);
 		gameTimeShowLable.setFont(new Font("Microsoft YaHei", Font.BOLD, 60));
 //		gameTimeShowLable.setBounds(162, 82, 100, 24);
-		gameTimeShowLable.setBounds(0 ,140, 700, 80);
+		gameTimeShowLable.setBounds(0 ,110, 700, 80);
 		contentPane.add(gameTimeShowLable);
 
 		// 主队犯规数设置
